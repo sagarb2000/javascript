@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            background-color:rgb(85, 177, 189);
+            color:black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;}
+
+        .todo-container {
+            background-color: #285f64;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .todo-input {
+            display: flex;
+            margin-bottom: 20px;
+        }
+         
+        .todo-input input {
+            flex: 1;
+            padding: 10px;
+            border:solid black;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .todo-input button {
+            padding: 10px;
+            background-color: #e2f108;
+            border:solid black;
+            border-radius: 4px;
+            color:black;
+            cursor: pointer;
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-list li {
+            background-color:black;
+            color:white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <div class="todo-input">
+            <input type="text" id="new-todo" placeholder="Add new">
+            <button id="add-button">Add</button>
+        </div>
+        <ul class="todo-list" id="todo-list">
+            
+        </ul>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>
